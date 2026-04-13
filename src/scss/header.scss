@@ -1,0 +1,95 @@
+.header {
+  background-color: #49bbbc;
+  &_container {
+    &_list {
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 77px;
+      &_item {
+        &-2 {
+          ul {
+            display: flex;
+            column-gap: 30px;
+            li {
+              a {
+                font-family: poppins;
+                font-size: 22px;
+                letter-spacing: 1px;
+                font-weight: 300;
+                color: #fff;
+                position: relative;
+              }
+              a::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                transform: translateX(-50%) scaleX(0);
+                transform-origin: center;
+                transition: transform 200ms;
+              }
+              a:hover::after {
+                transform: translateX(-50%) scaleX(1);
+              }
+            }
+          }
+        }
+        &-3 {
+          &_list_item {
+            display: flex;
+            column-gap: 15px;
+            &_login {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 160px;
+              height: 60px;
+              border-radius: 50px;
+              a {
+                font-family: poppins;
+                font-size: 22px;
+                letter-spacing: 1px;
+                font-weight: 300;
+                color: #fff;
+              }
+            }
+            &_login:hover {
+              background-color: #fff;
+              transition: all 300ms;
+              a {
+                color: #000;
+              }
+            }
+            &_signup {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 160px;
+              height: 60px;
+              border-radius: 50px;
+              a {
+                font-family: poppins;
+                font-size: 22px;
+                letter-spacing: 1px;
+                font-weight: 300;
+                color: #fff;
+              }
+            }
+            &_signup:hover {
+              background-color: rgb(127, 207, 208);
+              transition: all 300ms;
+              a {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

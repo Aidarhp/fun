@@ -1,0 +1,1 @@
+# TODO: Animate underline on nav hover\n\n## Steps\n1. [x] Create TODO.md and plan breakdown\n2. [ ] Edit src/scss/header.scss with animated underline using ::after scaleX\n3. [ ] Test hover animation\n4. [ ] Complete task
